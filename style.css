@@ -1,4 +1,121 @@
-div {
-    text-align: center;
-    margin-top: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ubuntu;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* fonts */
+@font-face {
+  font-family: ubuntu;
+  src: url(./assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+/* variables */
+:root {
+  --white: #fff;
+  --black: #000;
+  --main-black: #1d262d;
+  --red: red;
+}
+
+/* global style */
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100vw;
+  height: 75px;
+  background-color: var(--main-black);
+  display: flex;
+  align-items: center;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+.logo a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 18px;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--white);
+  font-size: 20px;
+  position: relative;
+  padding: 5px 0;
+}
+
+.nav-link::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* nav open button */
+.nav-open {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* nav close button */
+.nav-close {
+
+}
+
+/* responsive navbar */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .links-wrapper {
+    display: none;
+  }
+  .logo a {
+    font-size: 20px;
+  }
+  .nav-open {
+    width: 20px;
+    display: block;
+  }
 }
