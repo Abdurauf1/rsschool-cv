@@ -189,3 +189,9 @@ nav > div {
   text-decoration: none;
   text-align: center;
 }
+
+.bi-download,
+.bi-envelope {
+  margin-left: 5px;
+  color: var(--main-red);
+}
