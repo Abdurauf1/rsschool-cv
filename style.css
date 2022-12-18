@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ubuntu;
+  font-family: ubuntu, sans-serif;
 }
 
 html {
@@ -44,10 +44,11 @@ body {
 nav {
   width: 100vw;
   height: 100px;
-  background-color: var(--main-black);
+  background-color: var(--drak-blue);
   display: flex;
   align-items: center;
   position: sticky;
+  top: 0;
 }
 
 nav > div {
@@ -112,12 +113,13 @@ nav > div {
   }
 }
 
-/* header */
-.about {
+/* abput me */
+#about {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
   overflow: hidden;
 }
 
@@ -193,5 +195,48 @@ nav > div {
 .bi-download,
 .bi-envelope {
   margin-left: 5px;
+  color: var(--main-red);
+}
+
+/* skills */
+#skills {
+  width: 100%;
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+
+.title-text {
+  color: var(--main-red);
+  font-size: 25px;
+}
+
+.title {
+  color: var(--white);
+  font-size: 35px;
+  line-height: 5rem;
+}
+
+.skills-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.skill {
+  width: 25%;
+  font-size: 20px;
+  color: var(--white);
+  line-height: 2.5rem;
+}
+
+.skill::before {
+  content: "<";
+  color: var(--main-red);
+}
+
+.skill::after {
+  content: " />";
   color: var(--main-red);
 }
