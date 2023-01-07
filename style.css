@@ -3,15 +3,7 @@
   font-family: ubuntu;
   src: url(./assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
 }
-
 /* variables */
-:root {
-  --white: #fff;
-  --black: #000;
-  --main-red: #b20600;
-  --drak-blue: #00092c;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -34,19 +26,18 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    width: 85%;
-  }
+.container {
+  width: 85%;
 }
 
 /* nav */
 nav {
   width: 100vw;
-  height: 100px;
+  height: 5rem;
   background-color: var(--drak-blue);
   display: flex;
   align-items: center;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -84,7 +75,6 @@ nav > div {
   position: relative;
   padding: 5px 0;
 }
-
 .nav-link::before {
   content: "";
   width: 0;
@@ -94,23 +84,22 @@ nav > div {
   bottom: 0;
   transition: 0.5s;
 }
-
 .nav-link:hover::before {
   width: 100%;
 }
 
 /* responsive navbar */
-@media screen and (max-width: 992px) {
-  .links-wrapper {
-    display: none;
-  }
-  .logo a {
-    font-size: 20px;
-  }
-  .nav-open {
-    width: 20px;
-    display: block;
-  }
+.links-wrapper {
+  display: none;
+}
+
+.logo a {
+  font-size: 20px;
+}
+
+.nav-open {
+  width: 20px;
+  display: block;
 }
 
 /* abput me */
@@ -133,18 +122,15 @@ nav > div {
 .info {
   width: 60%;
 }
-
 .info > h2:first-child {
   color: var(--white);
   text-transform: capitalize;
   font-size: 30px;
   text-align: center;
 }
-
 .info > h2 > span {
   color: var(--main-red);
 }
-
 .info > h2:nth-child(2) {
   color: var(--white);
   font-size: 50px;
@@ -162,12 +148,10 @@ nav > div {
   line-height: 2.5rem;
   font-size: 1.5rem;
 }
-
 .about-me::before {
   content: "<";
   color: var(--main-red);
 }
-
 .about-me::after {
   content: "/>";
   color: var(--main-red);
@@ -175,6 +159,8 @@ nav > div {
 
 /* buttons container */
 .buttons-wrapper {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -230,13 +216,18 @@ nav > div {
   color: var(--white);
   line-height: 2.5rem;
 }
-
 .skill::before {
   content: "<";
   color: var(--main-red);
 }
-
 .skill::after {
   content: " />";
   color: var(--main-red);
 }
+
+/* projects section */
+#projects {
+  width: 100%;
+  padding: 3rem 0;
+  margin: 3rem 0;
+}/*# sourceMappingURL=style.css.map */
