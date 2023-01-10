@@ -17,12 +17,13 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--drak-blue);
+  background-color: #00092c;
 }
 
 /* global style */
 .container {
   width: 75%;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -31,77 +32,63 @@ body {
 }
 
 /* nav */
-nav {
+header {
   width: 100vw;
-  height: 5rem;
-  background-color: var(--drak-blue);
-  display: flex;
-  align-items: center;
+  height: 80px;
+  background-color: #00092c;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  left: 0;
 }
-
-nav > div {
+header .container {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* logo */
 }
-
-/* logo */
-.logo a {
+header .container .logo a {
   text-decoration: none;
-  color: var(--white);
+  color: #fff;
   font-size: 25px;
   text-transform: capitalize;
 }
-
-/* nav links */
-.links-wrapper {
+header .container nav {
+  height: 100%;
   display: flex;
   align-items: center;
 }
-
-.nav-item {
+header .container nav .links-wrapper {
+  display: flex;
+  align-items: center;
+}
+header .container nav .links-wrapper .nav-item {
   list-style: none;
   margin: 0 18px;
 }
-
-.nav-link {
+header .container nav .links-wrapper .nav-item .nav-link {
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--white);
+  color: #fff;
   font-size: 20px;
   position: relative;
   padding: 5px 0;
 }
-.nav-link::before {
+header .container nav .links-wrapper .nav-item .nav-link::before {
   content: "";
   width: 0;
   height: 3px;
-  background-color: var(--main-red);
+  background-color: #b20600;
   position: absolute;
   bottom: 0;
   transition: 0.5s;
 }
-.nav-link:hover::before {
+header .container nav .links-wrapper .nav-item .nav-link:hover::before {
   width: 100%;
 }
 
 /* responsive navbar */
-.links-wrapper {
-  display: none;
-}
-
-.logo a {
-  font-size: 20px;
-}
-
-.nav-open {
-  width: 20px;
-  display: block;
-}
-
 /* abput me */
 #about {
   width: 100%;
@@ -123,16 +110,16 @@ nav > div {
   width: 60%;
 }
 .info > h2:first-child {
-  color: var(--white);
+  color: #fff;
   text-transform: capitalize;
   font-size: 30px;
   text-align: center;
 }
 .info > h2 > span {
-  color: var(--main-red);
+  color: #b20600;
 }
 .info > h2:nth-child(2) {
-  color: var(--white);
+  color: #fff;
   font-size: 50px;
   margin: 20px 0;
   text-align: center;
@@ -144,17 +131,17 @@ nav > div {
 }
 
 .about-me {
-  color: var(--white);
+  color: #fff;
   line-height: 2.5rem;
   font-size: 1.5rem;
 }
 .about-me::before {
   content: "<";
-  color: var(--main-red);
+  color: #b20600;
 }
 .about-me::after {
   content: "/>";
-  color: var(--main-red);
+  color: #b20600;
 }
 
 /* buttons container */
@@ -170,8 +157,8 @@ nav > div {
 .cv-button,
 .email-me {
   width: 49%;
-  color: var(--white);
-  border: 1px solid var(--white);
+  color: #fff;
+  border: 1px solid #fff;
   border-radius: 3px;
   padding: 20px 50px;
   text-decoration: none;
@@ -181,7 +168,7 @@ nav > div {
 .bi-download,
 .bi-envelope {
   margin-left: 5px;
-  color: var(--main-red);
+  color: #b20600;
 }
 
 /* skills */
@@ -192,12 +179,12 @@ nav > div {
 }
 
 .title-text {
-  color: var(--main-red);
+  color: #b20600;
   font-size: 25px;
 }
 
 .title {
-  color: var(--white);
+  color: #fff;
   font-size: 35px;
   line-height: 5rem;
 }
@@ -213,16 +200,16 @@ nav > div {
 .skill {
   width: 25%;
   font-size: 20px;
-  color: var(--white);
+  color: #fff;
   line-height: 2.5rem;
 }
 .skill::before {
   content: "<";
-  color: var(--main-red);
+  color: #b20600;
 }
 .skill::after {
   content: " />";
-  color: var(--main-red);
+  color: #b20600;
 }
 
 /* projects section */

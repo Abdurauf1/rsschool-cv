@@ -6,9 +6,10 @@
 /* variables */
 $white: #fff
 $black: #000
-$main-red: #b20600
+$red: #b20600
 $drak-blue: #00092c
 
+// global styles
 *
     margin: 0
     padding: 0
@@ -20,79 +21,70 @@ html
 
 body
     overflow-x: hidden
-    background-color: var(--drak-blue)
+    background-color: $drak-blue
 
 /* global style */
 .container
     width: 75%
+    max-width: 1440px
     margin: 0 auto
 
 @media screen and (max-width: 1200px)
 .container
     width: 85%
 
+// -------------------------
 /* nav */
-nav
+// -------------------------
+header
     width: 100vw
-    height: 5rem
-    background-color: var(--drak-blue)
-    display: flex
-    align-items: center
+    height: 80px
+    background-color: $drak-blue
     position: sticky
     top: 0
-
-nav > div
-    display: flex
-    align-items: center
-    justify-content: space-between
-
-/* logo */
-.logo a
-    text-decoration: none
-    color: var(--white)
-    font-size: 25px
-    text-transform: capitalize
-
-/* nav links */
-.links-wrapper
-    display: flex
-    align-items: center
-
-.nav-item
-    list-style: none
-    margin: 0 18px
-
-.nav-link
-    text-decoration: none
-    text-transform: capitalize
-    color: var(--white)
-    font-size: 20px
-    position: relative
-    padding: 5px 0
-
-    &::before
-        content: ""
-        width: 0
-        height: 3px
-        background-color: var(--main-red)
-        position: absolute
-        bottom: 0
-        transition: 0.5s
-
-    &:hover::before
-        width: 100%
+    left: 0
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        /* logo */
+        .logo a
+            text-decoration: none
+            color: $white
+            font-size: 25px
+            text-transform: capitalize
+        // nav-links
+        nav
+            height: 100%
+            display: flex
+            align-items: center
+            .links-wrapper
+                display: flex
+                align-items: center
+                .nav-item
+                    list-style: none
+                    margin: 0 18px
+                    .nav-link
+                        text-decoration: none
+                        text-transform: capitalize
+                        color: $white
+                        font-size: 20px
+                        position: relative
+                        padding: 5px 0
+                        &::before
+                            content: ""
+                            width: 0
+                            height: 3px
+                            background-color: $red
+                            position: absolute
+                            bottom: 0
+                            transition: 0.5s
+                        &:hover::before
+                            width: 100%
 
 /* responsive navbar */
-@media screen and (max-width: 992px)
-.links-wrapper
-    display: none
-
-.logo a
-    font-size: 20px
-
-.nav-open
-    width: 20px
-    display: block
+@media screen and (max-width: 768px)
 
 /* abput me */
 #about
@@ -113,16 +105,16 @@ nav > div
     width: 60%
 
     & > h2:first-child
-        color: var(--white)
+        color: $white
         text-transform: capitalize
         font-size: 30px
         text-align: center
 
     & > h2 > span
-        color: var(--main-red)
+        color: $red
 
     & > h2:nth-child(2)
-        color: var(--white)
+        color: $white
         font-size: 50px
         margin: 20px 0
         text-align: center
@@ -132,17 +124,15 @@ nav > div
     margin-top: 3rem
 
 .about-me
-    color: var(--white)
+    color: $white
     line-height: 2.5rem
     font-size: 1.5rem
-
     &::before
         content: "<"
-        color: var(--main-red)
-
+        color: $red
     &::after
         content: "/>"
-        color: var(--main-red)
+        color: $red
 
 /* buttons container */
 .buttons-wrapper
@@ -154,8 +144,8 @@ nav > div
 .cv-button,
 .email-me
     width: 49%
-    color: var(--white)
-    border: 1px solid var(--white)
+    color: $white
+    border: 1px solid $white
     border-radius: 3px
     padding: 20px 50px
     text-decoration: none
@@ -164,7 +154,7 @@ nav > div
 .bi-download,
 .bi-envelope
     margin-left: 5px
-    color: var(--main-red)
+    color: $red
 
 /* skills */
 #skills
@@ -173,11 +163,11 @@ nav > div
     margin: 3rem 0
 
 .title-text
-    color: var(--main-red)
+    color: $red
     font-size: 25px
 
 .title
-    color: var(--white)
+    color: $white
     font-size: 35px
     line-height: 5rem
 
@@ -191,16 +181,14 @@ nav > div
 .skill
     width: 25%
     font-size: 20px
-    color: var(--white)
+    color: $white
     line-height: 2.5rem
-
     &::before
         content: "<"
-        color: var(--main-red)
-
+        color: $red
     &::after
         content: " />"
-        color: var(--main-red)
+        color: $red
 
 /* projects section */
 #projects
