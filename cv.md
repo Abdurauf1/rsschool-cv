@@ -10,3 +10,13 @@
 **E-mail:** aabdurauf004@gmail.com<br>
 **Telegram:** https://t.me/aabdurauf004<br>
 [LinkedIn](https://www.linkedin.com/in/abdurauf-ashurov-656415213/)
+
+---
+
+### About:
+
+Love learning new things with patience, good commmunication skills, creative problem solver, ability to plan for everything and accelerated failure mentality.<br>
+Hard working, conscientious, team work and goal-oriented.<br>
+Started learning programming in 2021. Worked in different projects with different web technologies.<br>
+
+I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Engineer<br>
