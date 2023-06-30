@@ -20,3 +20,17 @@ Hard working, conscientious, team work and goal-oriented.<br>
 Started learning programming in 2021. Worked in different projects with different web technologies.<br>
 
 I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Engineer<br>
+
+---
+
+### Skills:
+
+- HTML, Markdown
+- CSS, SCSS, Sass, Bootstrap, styled-components, react-boostrap
+- Git, GitHub
+- JavaScript, TypeScript(basics)
+- React.js
+- Node.js, Express.js, MySql(basics)
+- Node Package Manager(npm), nvm, yarn
+- VS Code, Postman API, Prettier
+- Word, Excel, PowerPoint
