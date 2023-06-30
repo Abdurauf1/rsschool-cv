@@ -34,3 +34,12 @@ I believe, that my ability to learn and to gain new skills will lead me through 
 - Node Package Manager(npm), nvm, yarn
 - VS Code, Postman API, Prettier
 - Word, Excel, PowerPoint
+
+---
+
+### Languages:
+
+- English
+- Russian
+- Uzbek - native
+- Tajik - native
