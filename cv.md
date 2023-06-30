@@ -60,3 +60,9 @@ I believe, that my ability to learn and to gain new skills will lead me through 
   return 1 + persistence(parseFloat(mult));
 }
 ```
+
+---
+
+### Courses:
+
+- Frontend Development Course in IBS School
