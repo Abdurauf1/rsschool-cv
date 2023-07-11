@@ -173,6 +173,7 @@ main #about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   /* hero image */
   /* hero info */
 }
@@ -234,6 +235,77 @@ main #about .info .about-text p::before {
 main #about .info .about-text p::after {
   content: " />";
   color: #b20600;
+}
+main #about .contacts {
+  list-style: none;
+}
+main #about .contacts li {
+  position: absolute;
+}
+main #about .contacts li:nth-child(1) {
+  top: 10%;
+  left: 20%;
+}
+main #about .contacts li:nth-child(1) a i {
+  color: #229ED9;
+}
+main #about .contacts li:nth-child(2) {
+  top: 25%;
+  right: 20%;
+}
+main #about .contacts li:nth-child(2) a i {
+  color: #0A66C2;
+}
+main #about .contacts li:nth-child(3) {
+  top: 40%;
+  left: 20%;
+}
+main #about .contacts li:nth-child(3) a i {
+  color: #fafafa;
+}
+main #about .contacts li a i {
+  font-size: 50px;
+}
+@media screen and (max-width: 870px) {
+  main #about .contacts li:nth-child(1) {
+    top: 10%;
+    left: 15%;
+  }
+  main #about .contacts li:nth-child(2) {
+    top: 25%;
+    right: 9%;
+  }
+  main #about .contacts li:nth-child(3) {
+    top: 40%;
+    left: 10%;
+  }
+  main #about .contacts li a i {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #about .contacts li:nth-child(1) {
+    top: 6%;
+    left: 15%;
+  }
+  main #about .contacts li:nth-child(2) {
+    top: 25%;
+    right: 9%;
+  }
+  main #about .contacts li:nth-child(3) {
+    top: 30%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 560px) {
+  main #about .contacts {
+    margin-top: 20px;
+    display: flex;
+  }
+  main #about .contacts li {
+    position: inherit;
+    margin: 0 15px;
+  }
 }
 @media screen and (max-width: 1000px) {
   main #about .info .about-text p {
@@ -324,7 +396,7 @@ main #code-example h3 {
   margin: 35px 0;
 }
 main #code-example h3::before {
-  content: "< ";
+  content: "<";
   color: #b20600;
 }
 main #code-example h3::after {

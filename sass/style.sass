@@ -153,6 +153,7 @@ main
         display: flex
         flex-direction: column
         align-items: center
+        position: relative
         /* hero image */
         .hero-img
             width: 20em
@@ -202,7 +203,65 @@ main
                     &::after
                         content: " />"
                         color: $red
-
+        .contacts
+            list-style: none
+            li
+                position: absolute
+                &:nth-child(1)
+                    top: 10%
+                    left: 20%
+                    a
+                        i
+                            color: #229ED9
+                &:nth-child(2)
+                    top: 25%
+                    right: 20%
+                    a
+                        i
+                            color: #0A66C2
+                &:nth-child(3)
+                    top: 40%
+                    left: 20%
+                    a
+                        i
+                            color: #fafafa
+                a
+                    i
+                        font-size: 50px
+        @media screen and (max-width: 870px)
+            .contacts
+                li
+                    &:nth-child(1)
+                        top: 10%
+                        left: 15%
+                    &:nth-child(2)
+                        top: 25%
+                        right: 9%
+                    &:nth-child(3)
+                        top: 40%
+                        left: 10%
+                    a
+                        i
+                            font-size: 40px
+        @media screen and (max-width: 700px)
+            .contacts
+                li
+                    &:nth-child(1)
+                        top: 6%
+                        left: 15%
+                    &:nth-child(2)
+                        top: 25%
+                        right: 9%
+                    &:nth-child(3)
+                        top: 30%
+                        left: 10%
+        @media screen and (max-width: 560px)
+            .contacts
+                margin-top: 20px
+                display: flex
+                li
+                    position: inherit
+                    margin: 0 15px
     @media screen and (max-width: 1000px)
         #about
             .info
@@ -293,7 +352,7 @@ main
             font-size: 25px
             margin: 35px 0
             &::before
-                content: "< "
+                content: "<"
                 color: $red
             &::after
                 content: " />"
