@@ -106,6 +106,26 @@
           <li class="skill">Microsoft Office</li>
         </ul>
       </section>
+      <!-- code example -->
+      <section id="code-example">
+        <h2 class="title">Code Example</h2>
+        <h3>Persistent Bugger</h3>
+        <pre>
+          <code>
+            function persistence(num) {
+              if (num.toString().length === 1) {
+                return 0;
+              }
+              var mult = 1;
+              var splitStr = num.toString().split("");
+              for (var i = 0; i < splitStr.length; i++) {
+                mult *= parseFloat(splitStr[i])
+              }
+              return 1 + persistence(parseFloat(mult));
+            }
+        </code>
+      </pre>
+      </section>
       <!-- projects -->
       <section id="projects">
         <p class="title-text">What I Do</p>

@@ -284,6 +284,38 @@ main
                     width: 50%
 
     // -------------------------
+    /* code example */
+    // -------------------------
+    #code-example
+        padding: 50px 0
+        h3
+            color: $white
+            font-size: 25px
+            margin: 35px 0
+            &::before
+                content: "< "
+                color: $red
+            &::after
+                content: " />"
+                color: $red
+        pre
+            color: $white
+            border-radius: 10px
+            padding: 10px 0
+            border: 2px solid $red
+            font-size: 18px
+            letter-spacing: 1px
+            overflow-x: hidden
+
+    @media screen and (max-width: 500px)
+        #code-example
+            h3
+                margin: 10px 0 20px 0
+                font-size: 20px
+            pre
+                font-size: 13px
+
+    // -------------------------
     /* projects */
     // -------------------------
     #projects
