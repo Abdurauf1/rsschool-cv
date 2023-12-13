@@ -13,7 +13,7 @@ navLinks.forEach(link => {
     goToSection(link);
 });
 
-function goToSection(e: any) {
+function goToSection(e: Element) {
     e.addEventListener("click", (e: any) => {
         e.preventDefault();
         const id: string = e.target.getAttribute("href").slice(1);
@@ -27,3 +27,11 @@ function goToSection(e: any) {
         });
     });
 }
+
+const closeNavbar = (e: Event) => {
+    if (!navBtn.contains(e.target as Node) && !nav.contains(e.target as Node)) {
+        nav.classList.remove("nav-active")
+    }
+}
+
+document.addEventListener("click", closeNavbar)

@@ -25,3 +25,9 @@ function goToSection(e) {
         });
     });
 }
+const closeNavbar = (e) => {
+    if (!navBtn.contains(e.target) && !nav.contains(e.target)) {
+        nav.classList.remove("nav-active");
+    }
+};
+document.addEventListener("click", closeNavbar);
