@@ -25,13 +25,13 @@ I believe, that my ability to learn and to gain new skills will lead me through 
 
 ### Skills:
 
+- JavaScript, TypeScript
+- React.js, Redux.js
 - HTML, Markdown
-- CSS, SCSS, Sass, Bootstrap, styled-components, react-boostrap
-- Git, GitHub
-- JavaScript, TypeScript(basics)
-- React.js
-- Node.js, Express.js, MySql(basics)
-- Node Package Manager(npm), nvm, yarn
+- CSS, SCSS, Sass, Bootstrap, styled-components, react-boostrap, Less, TailwindCSS
+- GitHub, Netlify
+- Node.js, Express.js, MySql, MongoDB(basics)
+- Node Package Manager(npm), Node Version Manager(nvm), git, yarn, vite
 - VS Code, Postman API, Prettier
 - Word, Excel, PowerPoint
 
@@ -41,7 +41,7 @@ I believe, that my ability to learn and to gain new skills will lead me through 
 
 - English
 - Russian
-- Uzbek - native
+- Uzbek
 - Tajik - native
 
 ---
