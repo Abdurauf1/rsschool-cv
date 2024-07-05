@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdurauf Ashurov CV</title>
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="/">abdurauf ashurov</a>
+            </div>
+            <!-- nav links -->
+            <nav>
+                <ul class="links-wrapper">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <!-- main content -->
+    <main id="contacts" class="container">
+        <!-- about me -->
+        <section id="about">
+            <div class="hero-img">
+                <img src="./assets/images/me2.jpg" alt="hero img">
+            </div>
+            <div class="info">
+                <h1 class="my-name">hi, i'm <span>abdurauf ashurov</span> :)</h1>
+                <h2>Frontend Developer</h2>
+                <div class="about-text">
+                    <p>&nbsp;I am Frontend Developer from Tashkent, Uzbekistan.</p>
+                    <p>
+                        I have knowledge of HTML, CSS, SCSS, Bootstrap, styled-components, JavaScript and
+                        React.
+                    </p>
+                    <p>
+                        I am looking forward to working in teams as well as individually. I am not only
+                        willing to deepen my knowledge but I also want to apply them to the real products.
+                    </p>
+                </div>
+                <div class="buttons-wrapper">
+                    <a class="email-me" href="aabdurauf004@gmail.com">
+                        Email Me
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                    <a class="cv-button" href="./assets/Resume.pdf" download="resume">
+                        Download CV
+                        <i class="bi bi-download"></i></a>
+                </div>
+            </div>
+            <ul class="contacts">
+                <li>
+                    <a href="https://t.me/aabdurauf004">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/abdurauf-ashurov-656415213/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Abdurauf1">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- skills -->
+        <section id="skills">
+            <p class="title-text">Why Hire Me</p>
+            <h2 class="title">Skills</h2>
+            <ul class="skills-wrapper">
+                <li class="skill">HTML</li>
+                <li class="skill">Markdown</li>
+                <li class="skill">CSS</li>
+                <li class="skill">SCSS</li>
+                <li class="skill">Sass</li>
+                <li class="skill">Bootstrap</li>
+                <li class="skill">styled-components</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">React</li>
+                <li class="skill">npm</li>
+                <li class="skill">nvm</li>
+                <li class="skill">yarn</li>
+                <li class="skill">VS Code</li>
+                <li class="skill">Postman API</li>
+                <li class="skill">Git</li>
+                <li class="skill">GitHub</li>
+                <li class="skill">Microsoft Office</li>
+            </ul>
+        </section>
+        <!-- code example -->
+        <section id="code-example">
+            <h2 class="title">Code Example</h2>
+            <h3>Persistent Bugger</h3>
+            <pre>
+          <code>
+            function persistence(num) {
+              if (num.toString().length === 1) {
+                return 0;
+              }
+              var mult = 1;
+              var splitStr = num.toString().split("");
+              for (var i = 0; i &lt; splitStr.length; i++) {
+                mult *= parseFloat(splitStr[i])
+              }
+              return 1 + persistence(parseFloat(mult));
+            }
+        </code>
+      </pre>
+        </section>
+        <!-- projects -->
+        <section id="projects">
+            <p class="title-text">What I Do</p>
+            <h2 class="title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-item-content">
+                        <p>HTML, TypeScript, CSS</p>
+                        <h3>Lumia website clone</h3>
+                        <a target="_blank" href="https://abdurauf1.github.io/lumia-clone/">Live preview</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-content">
+                        <p>HTML, JavaScript, CSS</p>
+                        <h3>Random Color Generator</h3>
+                        <a target="_blank" href="https://abdurauf1.github.io/random-color-generator/">Live preview</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- education -->
+        <section id="education">
+            <p class="title-text">Where I gained my knowledge</p>
+            <h2 class="title">Education and courses</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <p class="education-year">September, 2022 - now</p>
+                    <p class="education-status">In Progress</p>
+                    <p class="education-degree">IT</p>
+                    <a class="education-company" href="https://amity.uz/">Amity University In Tashkent</a>
+                </div>
+                <div class="education-item">
+                    <p class="education-year">March, 2021 - October, 2021</p>
+                    <p class="education-status">Certificate</p>
+                    <p class="education-degree">Frontend Development</p>
+                    <a class="education-company" href="#">IBS School</a>
+                </div>
+            </div>
+        </section>
+        <!-- languages -->
+        <section id="languages">
+            <p class="title-text">I can speak</p>
+            <h2 class="title">Languages</h2>
+            <div class="languages-container">
+                <div class="language">
+                    <div></div>
+                    <p>English</p>
+                    <p>Upper-Intermediate</p>
+                </div>
+                <div class="language">
+                    <div></div>
+                    <p>Russian</p>
+                    <p>Elementary</p>
+                </div>
+                <div class="language">
+                    <div></div>
+                    <p>Uzbek</p>
+                    <p>Native</p>
+                </div>
+                <div class="language">
+                    <div></div>
+                    <p>Tajik</p>
+                    <p>Native</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="container">
+        <span>&#169; 2024 by Abdurauf Ashurov</span>
+        <a class="github_link" href="https://github.com/Abdurauf1">GitHub</a>
+        <a href="https://rs.school/courses/javascript-ru/">
+            <img src="./assets/images/rs_school_js.svg" alt="rs_school_logo">
+        </a>
+    </footer>
+    <!-- javascript file -->
+    <script src="./ts/main.js"></script>
+</body>
+
+</html>
