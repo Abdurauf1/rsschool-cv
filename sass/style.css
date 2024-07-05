@@ -1,0 +1,599 @@
+/* fonts */
+@font-face {
+  font-family: ubuntu;
+  src: url("../assets/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+/* variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ubuntu, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #00092c;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+.title-text {
+  color: #b20600;
+  font-size: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 35px;
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .title-text {
+    font-size: 18px;
+  }
+}
+/* nav */
+header {
+  width: 100vw;
+  height: 5em;
+  background-color: #00092c;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* logo */
+}
+header .container .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  display: flex;
+  font-weight: 700;
+}
+header .container nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+header .container nav .links-wrapper {
+  display: flex;
+  align-items: center;
+}
+header .container nav .links-wrapper .nav-item {
+  list-style: none;
+  margin: 0 1em;
+}
+header .container nav .links-wrapper .nav-item .nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.25rem;
+  position: relative;
+  padding: 0.3em 0;
+}
+header .container nav .links-wrapper .nav-item .nav-link::before {
+  content: "";
+  width: 0%;
+  height: 0.15rem;
+  background-color: #b20600;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s;
+}
+header .container nav .links-wrapper .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+header .container .burger {
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease;
+}
+header .container .burger .line1,
+header .container .burger .line2,
+header .container .burger .line3 {
+  width: 1.3em;
+  height: 0.15em;
+  background-color: #fff;
+  margin: 0.3em;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 800px) {
+  nav {
+    width: 100%;
+    height: 0 !important;
+    overflow: hidden;
+    position: absolute;
+    top: 5em;
+    right: 0;
+    left: 0;
+  }
+  nav .links-wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #00092c;
+  }
+  nav .links-wrapper .nav-item {
+    transition: all 0.3s ease-in;
+    opacity: 0;
+  }
+  .burger {
+    display: block !important;
+  }
+}
+.nav-active {
+  height: 15rem !important;
+}
+.nav-active .links-wrapper .nav-item {
+  opacity: 1;
+}
+
+/* body */
+main {
+  /* about me */
+  /* buttons container */
+  /* skills */
+  /* code example */
+  /* projects */
+  /* education */
+  /* languages */
+}
+main #about {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* hero image */
+  /* hero info */
+}
+main #about .hero-img {
+  width: 20em;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 2em;
+}
+main #about .hero-img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 50%;
+}
+main #about .hero-img::before {
+  background-color: #b20600;
+  transform: translate(-0.5em, -0.5em);
+}
+main #about .hero-img img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+main #about .info {
+  /* about me info text */
+}
+main #about .info .my-name {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: center;
+}
+main #about .info .my-name span {
+  color: #b20600;
+}
+main #about .info h2 {
+  color: #fff;
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+}
+main #about .info .about-text {
+  margin-top: 3.5em;
+}
+main #about .info .about-text p {
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 20px;
+}
+main #about .info .about-text p::before {
+  content: "<";
+  color: #b20600;
+}
+main #about .info .about-text p::after {
+  content: " />";
+  color: #b20600;
+}
+main #about .contacts {
+  list-style: none;
+}
+main #about .contacts li {
+  position: absolute;
+}
+main #about .contacts li:nth-child(1) {
+  top: 10%;
+  left: 20%;
+}
+main #about .contacts li:nth-child(1) a i {
+  color: #229ED9;
+}
+main #about .contacts li:nth-child(2) {
+  top: 25%;
+  right: 20%;
+}
+main #about .contacts li:nth-child(2) a i {
+  color: #0A66C2;
+}
+main #about .contacts li:nth-child(3) {
+  top: 40%;
+  left: 20%;
+}
+main #about .contacts li:nth-child(3) a i {
+  color: #fafafa;
+}
+main #about .contacts li a i {
+  font-size: 50px;
+}
+@media screen and (max-width: 870px) {
+  main #about .contacts li:nth-child(1) {
+    top: 10%;
+    left: 15%;
+  }
+  main #about .contacts li:nth-child(2) {
+    top: 25%;
+    right: 9%;
+  }
+  main #about .contacts li:nth-child(3) {
+    top: 40%;
+    left: 10%;
+  }
+  main #about .contacts li a i {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main #about .contacts li:nth-child(1) {
+    top: 6%;
+    left: 15%;
+  }
+  main #about .contacts li:nth-child(2) {
+    top: 25%;
+    right: 9%;
+  }
+  main #about .contacts li:nth-child(3) {
+    top: 30%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 560px) {
+  main #about .contacts {
+    margin-top: 20px;
+    display: flex;
+  }
+  main #about .contacts li {
+    position: inherit;
+    margin: 0 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main #about .info .about-text p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main #about .hero-img {
+    width: 60%;
+  }
+  main #about .info .about-text p {
+    font-size: 18px;
+  }
+}
+main .buttons-wrapper {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+main .cv-button,
+main .email-me {
+  width: 49%;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 20px 50px;
+  text-decoration: none;
+  text-align: center;
+}
+main .bi-download,
+main .bi-envelope {
+  margin-left: 5px;
+  color: #b20600;
+}
+@media screen and (max-width: 600px) {
+  main .buttons-wrapper {
+    flex-direction: column;
+  }
+  main .buttons-wrapper .cv-button,
+  main .buttons-wrapper .email-me {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+main #skills {
+  padding: 50px 0;
+}
+main #skills .skills-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+main #skills .skill {
+  width: 25%;
+  font-size: 20px;
+  color: #fff;
+  line-height: 35px;
+  list-style: none;
+}
+main #skills .skill::before {
+  content: "<";
+  color: #b20600;
+}
+main #skills .skill::after {
+  content: " />";
+  color: #b20600;
+}
+@media (max-width: 800px) {
+  main #skills .skills-wrapper .skill {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #skills .skills-wrapper .skill {
+    width: 50%;
+  }
+}
+main #code-example {
+  padding: 50px 0;
+}
+main #code-example h3 {
+  color: #fff;
+  font-size: 25px;
+  margin: 35px 0;
+}
+main #code-example h3::before {
+  content: "<";
+  color: #b20600;
+}
+main #code-example h3::after {
+  content: " />";
+  color: #b20600;
+}
+main #code-example pre {
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 2px solid #b20600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 500px) {
+  main #code-example h3 {
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+  }
+  main #code-example pre {
+    font-size: 13px;
+  }
+}
+main #projects {
+  padding: 50px 0;
+}
+main #projects .projects-container {
+  margin-top: 30px;
+}
+main #projects .projects-container .project-item {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+main #projects .projects-container .project-item:nth-child(1) {
+  margin-top: 0;
+  background-image: url("../assets/images/lumia.png");
+}
+main #projects .projects-container .project-item:nth-child(2) {
+  background-image: url("../assets/images/color_flipper.png");
+}
+main #projects .projects-container .project-item .project-item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+}
+main #projects .projects-container .project-item .project-item-content p {
+  color: #b20600;
+  font-weight: 400;
+  font-size: 20px;
+}
+main #projects .projects-container .project-item .project-item-content h3 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 60px;
+}
+main #projects .projects-container .project-item .project-item-content a {
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 40px;
+  background-color: #b20600;
+}
+@media screen and (max-width: 500px) {
+  main #projects .projects-container .project-item {
+    height: 250px;
+  }
+  main #projects .projects-container .project-item .project-item-content {
+    padding-left: 20px;
+  }
+  main #projects .projects-container .project-item .project-item-content p {
+    font-size: 18px;
+  }
+  main #projects .projects-container .project-item .project-item-content h3 {
+    font-size: 25px;
+  }
+  main #projects .projects-container .project-item .project-item-content a {
+    padding: 15px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+main #education {
+  padding: 50px 0;
+}
+main #education .education-container .education-item {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #fff;
+  font-size: 20px;
+}
+main #education .education-container .education-item .education-year {
+  font-weight: 600;
+}
+main #education .education-container .education-item .education-status {
+  font-weight: 400;
+}
+main #education .education-container .education-item .education-degree {
+  font-weight: bold;
+}
+main #education .education-container .education-item .education-company {
+  color: #fff;
+  transition-duration: 0.3s;
+}
+main #education .education-container .education-item .education-company:hover {
+  color: #b20600;
+}
+@media screen and (max-width: 700px) {
+  main .education-item {
+    padding-bottom: 5px;
+    flex-direction: column;
+  }
+}
+main #languages {
+  padding: 50px 0;
+}
+main #languages .languages-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+main #languages .languages-container .language {
+  color: #fff;
+}
+main #languages .languages-container .language div:nth-child(1) {
+  width: 40px;
+  height: 8px;
+  background-color: #b20600;
+}
+main #languages .languages-container .language p:nth-child(2) {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px 0;
+}
+main #languages .languages-container .language p:nth-child(3) {
+  font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+  main #languages .languages-container {
+    flex-direction: column;
+  }
+  main #languages .languages-container .language {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main #languages .languages-container .language div:nth-child(1) {
+    width: 100%;
+  }
+}
+
+/* footer */
+footer {
+  width: 100vw;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer span, footer .github_link {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+footer .github_link {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+footer a img {
+  width: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer .github_link {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
