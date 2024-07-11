@@ -113,7 +113,6 @@ header .container nav .links-wrapper .nav-item .nav-link:hover::before {
 header .container .burger {
   cursor: pointer;
   display: none;
-  transition: all 0.3s ease;
 }
 header .container .burger .line1,
 header .container .burger .line2,
@@ -122,6 +121,16 @@ header .container .burger .line3 {
   height: 0.15em;
   background-color: #fff;
   margin: 0.3em;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+header .container .burger-open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+header .container .burger-open .line2 {
+  opacity: 0;
+}
+header .container .burger-open .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* responsive navbar */
@@ -178,10 +187,14 @@ main #about {
   /* hero info */
 }
 main #about .hero-img {
-  width: 20em;
+  width: 20em !important;
+  height: 20em;
   border-radius: 50%;
   position: relative;
   margin-bottom: 2em;
+  background-image: url("../assets/images/me.jpg");
+  background-position: top;
+  background-size: cover;
 }
 main #about .hero-img::before {
   content: "";
@@ -192,15 +205,8 @@ main #about .hero-img::before {
   top: 0;
   z-index: -1;
   border-radius: 50%;
-}
-main #about .hero-img::before {
   background-color: #b20600;
-  transform: translate(-0.5em, -0.5em);
-}
-main #about .hero-img img {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 50%;
+  transform: translate(-0.5em, -1em);
 }
 main #about .info {
   /* about me info text */
@@ -434,13 +440,14 @@ main #projects .projects-container .project-item {
   position: relative;
   border-radius: 10px;
   margin-top: 30px;
+  background-repeat: no-repeat;
 }
 main #projects .projects-container .project-item:nth-child(1) {
   margin-top: 0;
   background-image: url("../assets/images/lumia.png");
 }
 main #projects .projects-container .project-item:nth-child(2) {
-  background-image: url("../assets/images/color_flipper.png");
+  background-image: url("../assets/images/random_color_generator.jpg");
 }
 main #projects .projects-container .project-item .project-item-content {
   position: absolute;
@@ -478,7 +485,8 @@ main #projects .projects-container .project-item .project-item-content a {
 }
 @media screen and (max-width: 500px) {
   main #projects .projects-container .project-item {
-    height: 250px;
+    height: 200px;
+    background-position: center;
   }
   main #projects .projects-container .project-item .project-item-content {
     padding-left: 20px;
@@ -493,6 +501,11 @@ main #projects .projects-container .project-item .project-item-content a {
     padding: 15px 20px;
     font-size: 18px;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main #projects .projects-container .project-item {
+    background-position: top;
   }
 }
 main #education {
