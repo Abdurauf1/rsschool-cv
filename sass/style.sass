@@ -102,7 +102,6 @@ header
         .burger
             cursor: pointer
             display: none
-            transition: all 0.3s ease
             .line1,
             .line2,
             .line3
@@ -110,6 +109,14 @@ header
                 height: 0.15em
                 background-color: $white
                 margin: 0.3em
+                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out
+        .burger-open
+            .line1
+                transform: rotate(45deg) translate(5px, 5px)
+            .line2
+                opacity: 0
+            .line3
+                transform: rotate(-45deg) translate(5px, -5px)
 
 /* responsive navbar */
 @media screen and (max-width: 800px)
@@ -156,10 +163,14 @@ main
         position: relative
         /* hero image */
         .hero-img
-            width: 20em
+            width: 20em !important
+            height: 20em
             border-radius: 50%
             position: relative
             margin-bottom: 2em
+            background-image: url("../assets/images/me.jpg")
+            background-position: top
+            background-size: cover
             &::before
                 content: ""
                 width: 100%
@@ -169,13 +180,12 @@ main
                 top: 0
                 z-index: -1
                 border-radius: 50%
-            &::before
                 background-color: $red
-                transform: translate(-0.5em, -0.5em)
-            img
-                width: 100%
-                margin: 0 auto
-                border-radius: 50%
+                transform: translate(-0.5em, -1em)
+            // img
+            //     width: 100%
+            //     margin: 0 auto
+            //     border-radius: 50%
         /* hero info */
         .info
             .my-name
@@ -388,11 +398,12 @@ main
                 position: relative
                 border-radius: 10px
                 margin-top: 30px
+                background-repeat: no-repeat
                 &:nth-child(1)
                     margin-top: 0
                     background-image: url("../assets/images/lumia.png")
                 &:nth-child(2)
-                    background-image: url("../assets/images/color_flipper.png")
+                    background-image: url("../assets/images/random_color_generator.jpg")
 
                 .project-item-content
                     position: absolute
@@ -427,7 +438,9 @@ main
         #projects
             .projects-container
                 .project-item
-                    height: 250px
+                    height: 200px
+                    background-position: center
+
                     .project-item-content
                         padding-left: 20px
                         p
@@ -439,6 +452,11 @@ main
                             font-size: 18px
                             margin-top: 10px
 
+    @media screen and (max-width: 800px)
+        #projects
+            .projects-container
+                .project-item
+                    background-position: top
     // -------------------------
     /* education */
     // -------------------------
