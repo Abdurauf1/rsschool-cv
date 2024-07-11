@@ -188,7 +188,7 @@ main #about {
 }
 main #about .hero-img {
   width: 20em !important;
-  height: 20em;
+  height: 20em !important;
   border-radius: 50%;
   position: relative;
   margin-bottom: 2em;
